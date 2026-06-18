@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/biosiglive/archive/refs/tags/v2.0.4.tar.gz
-  sha256: 8304C781352DD79DDC7CA6A10E62332E80040732E9AEFC54383BC176DBC9E3D0
+  sha256: 296CAD6DAC6DF9D7F73874B4F749F6C20815C558F66C6E252BEC86E7020BFED2
 
 build:
   number: 0
