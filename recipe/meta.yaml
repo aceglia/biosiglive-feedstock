@@ -1,13 +1,13 @@
 {% set name = "biosiglive" %}
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://files.pythonhosted.org/packages/79/f3/98ca426880fc449c744cfaa5ba0401b5a2c01ee602f59e3d9c41d989988b/biosiglive-2.0.3.tar.gz
-  sha256: a9bb7a11b4bd032bd690606b0713d95c85640842ce7c5b1b12600e991b94de62
+  url: https://github.com/pyomeca/biosiglive/archive/refs/tags/v2.0.4.tar.gz
+  sha256: 8304C781352DD79DDC7CA6A10E62332E80040732E9AEFC54383BC176DBC9E3D0
 
 build:
   number: 0
