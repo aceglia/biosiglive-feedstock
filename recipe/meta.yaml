@@ -10,7 +10,7 @@ source:
   sha256: 296CAD6DAC6DF9D7F73874B4F749F6C20815C558F66C6E252BEC86E7020BFED2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -18,9 +18,9 @@ requirements:
   host:
     - pip
     - hatchling
-    - python >=3.9
+    - python {{ python_min }}
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - matplotlib-base
     - numpy
     - scipy
@@ -30,6 +30,8 @@ requirements:
 
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - xvfb-run python -c "import biosiglive"  # [linux]
   imports:
