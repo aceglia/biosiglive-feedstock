@@ -1,3 +1,2 @@
 xorg-x11-server-Xvfb
 libXtst
-hatchling
